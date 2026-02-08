@@ -1,9 +1,7 @@
 
 ## Be My Valentine Interactive Card
 
-An interactive Valentine’s Day webpage built with HTML, CSS, and JavaScript.
-
-It features smooth animations, sound effects, a playful “No” button, and a confetti celebration when “Yes” is clicked. Designed to be shared with someone special.
+An interactive Valentine's Day webpage with smooth animations, sound effects, playful interactions, and a confetti celebration. Perfect for sharing with someone special!
 
 ## Preview
 
@@ -26,74 +24,79 @@ Floating hearts animation
 Responsive design
 
 ## Project Structure
+```
 .
-├── index.html
+├── main.html
 └── README.md
+```
 
-Running Locally
+## Running Locally
 
-Ensure Python is installed
+### Prerequisites
+- Python 3 (usually pre-installed on macOS/Linux, available for Windows)
 
-Open a terminal in the project directory
+### Steps
 
-Start a local server:
-
-python -m http.server 8000
-
-
-Open your browser and visit:
-
-http://localhost:8000/index.html
+1. **Open a terminal** in the project folder where `main.html` is located
+2. **Start a local server**:
+   ```bash
+   python -m http.server 8000
+   ```
+3. **Find your local URL**: The terminal will confirm the server is running. Open your browser and visit:
+   ```
+   http://localhost:8000/main.html
+   ```
+   
+   > **Note**: The exact URL depends on your port number (8000 in this case). If port 8000 is already in use, Python will use a different port—check your terminal output for the exact URL. It will show something like `Serving HTTP on [::]:PORT_NUMBER`
 
 ## Customization
-Change the Valentine’s Name
 
-Line 173
-Replace (name) with your Valentine’s name:
+### Change the Valentine's Name
 
-<h2>Alex,<br>will you be my Valentine?</h2>
+1. Open `main.html` in a text editor
+2. Search for `(name)` (you'll find it in the card heading)
+3. Replace `(name)` with your Valentine's actual name:
+   ```html
+   <h2>Alex,<br>will you be my Valentine?</h2>
+   ```
+4. Save the file and refresh your browser
 
-Add a Personalized Message or Nickname
+### Add a Personalized Message or Nickname
 
-Line 180
-Edit the text to include a nickname or custom message:
+Find the same `<h2>` tag and customize it further:
+```html
+<h2>My Love 💕,<br>will you be my Valentine?</h2>
+```
 
-<h2>Alex 💕,<br>will you be my Valentine?</h2>
+Save and refresh to see your changes!
 
 ## Sharing the Page Using ngrok
 
-You can create a temporary public URL using ngrok.
+Turn your local server into a shareable public link with ngrok.
 
-Set Up ngrok
+### Setup ngrok
 
-Download ngrok
+1. Download and install ngrok from [ngrok.com](https://ngrok.com)
+2. Create a free account and authenticate (follow the setup instructions)
+3. Keep your terminal window open where your Python server is running
 
-Create an account
+### Generate a Shareable URL
 
-Generate an authentication token
-
-Add the token to ngrok following the official setup instructions
-
-Start the Local Server
-python -m http.server 8000
-
-Generate a Shareable URL
-Windows PowerShell
-ngrok http://localhost:8000
-
-macOS or Linux
+Open a **new terminal window** and run:
+```bash
 ngrok http 8000
+```
 
+ngrok will output a temporary public URL (e.g., `https://abc123.ngrok.io`). Share this URL with your Valentine!
 
-ngrok will output a temporary public URL that you can share.
+> **Important**: The URL changes each time you restart ngrok. Your local server must keep running for the link to work.
 
 # Notes
 
-The ngrok URL changes each time the service is restarted
-
-Audio playback requires user interaction due to browser policies
-
-Best viewed in modern browsers such as Chrome, Edge, or Firefox
+- **ngrok URL is temporary**: It regenerates each time you restart the service. Keep your local server running while sharing.
+- **Audio requires interaction**: Most browsers block audio playback until the user interacts with the page (this is normal browser behavior).
+- **Best browsers**: Chrome, Edge, or Firefox (for full animation and sound support).
+- **Offline use**: You can also just open `main.html` directly in your browser—no server needed if sharing isn't necessary.
 
 ## License
 
