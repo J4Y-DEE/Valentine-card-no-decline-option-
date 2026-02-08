@@ -96,7 +96,7 @@ ngrok will output a temporary public URL (e.g., `https://abc123.ngrok.io`). Shar
 - **ngrok URL is temporary**: It regenerates each time you restart the service. Keep your local server running while sharing.
 - **Audio requires interaction**: Most browsers block audio playback until the user interacts with the page (this is normal browser behavior).
 - **Best browsers**: Chrome, Edge, or Firefox (for full animation and sound support).
-- **Offline use**: You can also just open `main.html` directly in your browser—no server needed if sharing isn't necessary.
+- **Offline use**: You can also just open `main.html` directly in your browser- no server needed if sharing isn't necessary.
 
 ## License
 
