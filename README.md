@@ -1,15 +1,15 @@
 
-#Be My Valentine Interactive Card
+## Be My Valentine Interactive Card
 
 An interactive Valentine’s Day webpage built with HTML, CSS, and JavaScript.
 
 It features smooth animations, sound effects, a playful “No” button, and a confetti celebration when “Yes” is clicked. Designed to be shared with someone special.
 
-Preview
+## Preview
 
 Open locally or via a shareable link to experience the full interaction, including animations and sound effects.
 
-Features
+## Features
 
 Animated gradient background
 
@@ -25,7 +25,7 @@ Floating hearts animation
 
 Responsive design
 
-Project Structure
+## Project Structure
 .
 ├── index.html
 └── README.md
@@ -45,7 +45,7 @@ Open your browser and visit:
 
 http://localhost:8000/index.html
 
-Customization
+## Customization
 Change the Valentine’s Name
 
 Line 173
@@ -60,7 +60,7 @@ Edit the text to include a nickname or custom message:
 
 <h2>Alex 💕,<br>will you be my Valentine?</h2>
 
-Sharing the Page Using ngrok
+## Sharing the Page Using ngrok
 
 You can create a temporary public URL using ngrok.
 
@@ -87,7 +87,7 @@ ngrok http 8000
 
 ngrok will output a temporary public URL that you can share.
 
-Notes
+# Notes
 
 The ngrok URL changes each time the service is restarted
 
@@ -95,7 +95,7 @@ Audio playback requires user interaction due to browser policies
 
 Best viewed in modern browsers such as Chrome, Edge, or Firefox
 
-License
+## License
 
 This project is for personal and educational use.
 Feel free to customize and share responsibly.
